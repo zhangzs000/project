@@ -1,0 +1,231 @@
+html,body{
+   width : 100% ;
+   height : 100% ;
+}
+#gameBox{
+     width : 100% ;
+     height : 100% ; 
+     background: #446078;
+     position: absolute;
+     z-index: 1;    
+     overflow : hidden;
+    }
+.sky{
+    position : absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 300px;
+    z-index: 2;
+}
+.sky_01{
+    background: url(../images/ceil01.png) repeat-x;
+    background-size:1136px 300px;
+    background-position-x:0px;
+}
+.ground{
+   position : absolute;
+   left: 0px;
+   bottom: 0px;
+   z-index: 3;
+   width: 100%;
+   height: 92px;
+}
+.ground_01{
+   background: url(../images/floor00.png) repeat-x;
+   background-size:475px 92px; 
+   background-position-x:0px;
+}
+.player{
+  position: absolute;
+  z-index: 5;
+}
+ button{
+    position: absolute;
+    z-index: 7;
+    bottom: 14px;
+    width:  80px;
+    height: 80px;
+    border-radius: 50%;
+    outline: none;
+    border:none;
+
+   }
+   #squat{
+    background: url(../images/dun.png) no-repeat;
+    background-size: 100% 100%;   
+    left: 20px;
+   }
+   #jump{
+    background: url(../images/jump.png) no-repeat;
+    background-size: 100% 100%;  
+    right: 20px;
+   }
+   .player01_run{
+    background: url(../images/player01.gif) no-repeat;    
+    background-size:100% 100%; 
+   }
+   .player01_jump{
+    background: url(../images/player01_jump.png) no-repeat;
+    background-size:100% 100%; 
+    
+   }
+   .player01_squat{
+    background: url(../images/player01_dun.png) no-repeat;
+    background-size:100% 100%; 
+   }
+   .touchClass{
+      opacity: 0.6;
+      filter: alpha(opacity=60);
+   }
+   .coin{
+      position: absolute;
+      z-index: 5;
+   }
+   .jewel{
+      background: url(../images/jewel.png) no-repeat;
+       background-size:100% 100%; 
+   }
+   .goldCoin{
+       background: url(../images/goldCoin.png) no-repeat;
+       border-radius: 50%;
+        background-size:100% 100%; 
+   }
+   .silverCoin{
+       background: url(../images/silverCoin.png) no-repeat;
+      border-radius: 50%;
+       background-size:100% 100%; 
+   }
+   .copperCoin{
+       background: url(../images/copperCoin.png) no-repeat;
+        border-radius: 50%;
+         background-size:100% 100%; 
+   }
+   .silverCoinFly{
+       background: url(../images/silverCoinFly.gif) no-repeat;
+      border-radius: 50%;
+       background-size:100% 100%; 
+   }
+   .copperCoinFly{
+      background: url(../images/copperCoinFly.gif) no-repeat;
+        border-radius: 50%;
+         background-size:100% 100%; 
+   }
+   /*
+   由于动画不能实时监听，废弃
+   .coinFly{
+      animation: coinFly 4s linear 0s infinite;
+   }
+   @keyframes coinFly{
+      15% {transform: translate(300px,246px);}
+      15% {transform: translate(340px,180px);}
+      20% {transform: translate(300px,210px);}
+      35% {transform: translate(340px,246px);}
+      40% {transform: translate(300px,280px);}
+      50% {transform: translate(340px,246px);}
+      55% {transform: translate(180px,110px);}
+      60% {transform: translate(170px,130px);}
+      65% {transform: translate(190px,150px);}
+      75% {transform: translate(200px,140px);}
+      85% {transform: translate(420px,60px);}
+      95% {transform: translate(420px,40px);}
+      100%{transform: translate(470px,80px);}
+   }*/
+  /*导弹样式*/
+  .missile{
+    position: absolute;
+    z-index: 5;
+  }
+  .bigMissile{
+    background: url(../images/bigMissile1.png) no-repeat;
+    background-size:100% 100%; 
+  }
+  .bigMissileBottom{
+    position: absolute;
+    z-index: 4;
+    width: 30px;
+    height: 26px;
+    top: 0px;
+    left: 46px;
+    background: url(../images/bigMissileBottom1.gif) no-repeat;
+    background-size: 100% 100%;
+    
+  }
+  /*
+  animation: bigMissileBottom 0.6s linear 0s infinite;
+  @keyframes bigMissileBottom{
+      15% {transform: scale(1.3);}
+      35% {transform: scale(1);}
+      50% {transform: scale(0.8);}
+      75% {transform: scale(1);}
+      90% {transform: scale(1.3);}
+      100% {transform: scale(1);}
+     
+   }
+   */
+   /*怪兽球*/
+  .MstBall{
+    background: url(../images/mstBall.png) no-repeat;
+    background-size:100% 100%; 
+  }
+  #pause{
+    background:#a3b9d1 url(../images/pause.png) no-repeat;
+    height: 40px;
+    width: 40px;
+    background-size:100% 100%;
+    border: 1px solid #a3b9d1;
+    border-radius:10px;  
+    position: absolute;
+    z-index: 7;
+    top:8px;
+    right: 20px;
+    padding: 0;
+  }
+  .score,.distance{
+     position: absolute;
+     z-index: 7;
+     width: 140px;
+     height: 30px;
+     top:12px;
+  }
+  .score{
+    background: url(../images/score.png) no-repeat;
+    background-size:100% 100%; 
+    left: 20px;
+  }
+  .distance{
+    background: url(../images/distance.png) no-repeat;
+    background-size:100% 100%; 
+    left: 180px;
+  }
+  .number{
+    position: absolute;
+    top: 4px;
+    left: 38px;
+    text-align: right;
+    width: 77px;
+    height: 20px;
+    line-height: 20px;
+    font-weight: 900;
+    font-size:20px;
+    font-family:impact;
+  }
+ 
+  #score{
+    width: 79px;
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(33, 255, 245, 1)), to(rgba(64, 211, 255, 1)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  #distance{
+    width: 76px;
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(245, 249, 188, 1)), to(rgba(245, 223, 52, 1)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+ .fontClass{
+     background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(255, 207, 55, 1)), to(rgba(119, 17, 17, 1)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #fff;  
+ }

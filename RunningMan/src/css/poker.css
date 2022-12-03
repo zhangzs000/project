@@ -1,0 +1,100 @@
+html,body{
+   width : 100% ;
+   height : 100% ;
+}
+#gameBox{
+     width : 100% ;
+     height : 100% ; 
+     background: #446078 url(../images/poker/bg.png) repeat-x; 
+     background-size: 100% 100%;
+     position: absolute;
+     z-index: 1;    
+     overflow : hidden;
+}
+.pokerBox{
+	width: 466px;
+	height: 266px;
+	position: absolute;
+	background: url(../images/poker/pokerBox.png) no-repeat;
+	background-size:100% 100%; 
+	top: 50%;
+	left: 50%;
+	z-index: 3;
+	margin-left: -233px;
+	margin-top: -133px;
+}
+/*
+.pokerBoxHeader{
+	background: url(../images/poker/pokerBoxHeader.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 0;	
+	top: 0;
+	width: 100%;
+	height: 35px;
+	
+}
+*/
+.poker{
+	width: 106px;
+	height: 212px;
+	background: rgba(255,255,255,.1);
+	position: absolute;
+	top: 38px;
+	z-index: 1;
+}
+/*left定位有时不生效，把头部加到背景图中试试*/
+.poker:nth-of-type(1){
+	left: 8px;
+}
+.poker:nth-of-type(2){
+	left: 122px;
+}
+.poker:nth-of-type(3){
+	left: 236px;
+}
+.poker:nth-of-type(4){
+	left: 350px;
+}
+
+.poker div{
+	width: 106px;
+	height: 212px;/*由于定位的原因，父级变成pokerBox*/
+    position: absolute;
+    left: 0px;
+    top:0px;
+    z-index: 1;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: all .5s;
+}
+.toFace{
+	transform: rotateY(0deg);
+}
+.toBack{
+	transform: rotateY(180deg);
+}
+.pokerBack{
+	background: url(../images/poker/pokerBack.png);
+	background-size: 100% 100%;
+}
+.poker div.pokerFace{
+	z-index: 2;
+}
+.pokerFace_01{
+	background: url(../images/poker/pokerFace_01.png) no-repeat;
+	background-size: 100% 100%;
+}
+.pokerFace_02{
+	background: url(../images/poker/pokerFace_02.png) no-repeat;
+	background-size: 100% 100%;
+}
+.pokerFace_03{
+	background: url(../images/poker/pokerFace_03.png) no-repeat;
+	background-size: 100% 100%;
+}
+.pokerFace_04{
+	background: url(../images/poker/pokerFace_04.png) no-repeat;
+	background-size: 100% 100%;
+}
+
