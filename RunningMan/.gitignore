@@ -1,3 +1,6 @@
 node_modules
 dist
 note.txt
+build.js
+readme.md
+webpack.config.js
